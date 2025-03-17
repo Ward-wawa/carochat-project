@@ -118,6 +118,7 @@ export const useAuthStore = create<AuthState>((set,get)=>({
             console.log(err);
             toast.error(err.response.data.message);
         }finally {
+            window.location.reload()
             set({isLoggingIn:false});
         }
     },

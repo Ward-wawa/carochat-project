@@ -1,9 +1,8 @@
 import express from 'express';
 import {
-    checkAuth, forgotPassword,
+    checkAuth,
     login,
     logout,
-    resetPassword,
     signUp,
     updateFullName,
     updateProfile
