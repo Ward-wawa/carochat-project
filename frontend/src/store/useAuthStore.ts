@@ -103,6 +103,7 @@ export const useAuthStore = create<AuthState>((set,get)=>({
         catch(err:any){
             toast.error(err.response.data.message);
         }finally {
+            window.location.reload()
             set({isSigningUp:false});
         }
     },

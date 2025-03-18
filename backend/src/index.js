@@ -1,5 +1,5 @@
 import express from 'express';
-import {server,app,io} from "./lib/socket.js"
+import {server,app} from "./lib/socket.js"
 import authRoutes from "./routes/auth.route.js";
 import messageRoutes from "./routes/message.route.js";
 import dotenv from "dotenv";
